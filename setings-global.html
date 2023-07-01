@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISP HOST | Настройки</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo logo" href="index.html">
+              <img class="logo__img" src="images/logo.png" alt="логотип">
+            </a>
+
+            <div class="header__contacts">
+              <div class="header__contact">
+                <div class="header__contact-title">
+                  Абонентский отдел:
+                </div>
+                <p class="header__contact-text">
+                  Пн - Сб: 8:00 - 17:00
+                </p>
+                <a class="header__contact-tel link" href="tel:+380713346754">
+                  +380 71-334-67-54
+                </a>
+              </div>
+
+              <div class="header__contact header__contact--service">
+                <div class="header__contact-title">
+                  Течническая поддержка:
+                </div>
+                <p class="header__contact-text">
+                  круглосуточно 24/7
+                </p>
+                <a class="header__contact-tel link" href="tel:+380713346754">
+                  +380 71-334-67-54
+                </a>
+              </div>
+            </div>
+
+            <a class="header__login button button--transparent" href="http://stat.host-lan.net.ua/">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.9277 10.7766C9.94841 10.7766 9.96912 10.7766 9.99397 10.7766C10.0023 10.7766 10.0105 10.7766 10.0188 10.7766C10.0312 10.7766 10.0478 10.7766 10.0602 10.7766C11.2737 10.7559 12.2553 10.3293 12.9801 9.51336C14.5746 7.71588 14.3096 4.6345 14.2806 4.34044C14.177 2.13295 13.1333 1.07683 12.2719 0.583972C11.6299 0.215366 10.8803 0.0165666 10.0437 0H10.0147C10.0105 0 10.0023 0 9.99811 0H9.97326C9.51354 0 8.61066 0.0745496 7.74505 0.567405C6.87531 1.06026 5.81505 2.11638 5.71151 4.34044C5.68251 4.6345 5.41745 7.71588 7.01198 9.51336C7.73263 10.3293 8.7142 10.7559 9.9277 10.7766ZM6.81733 4.44398C6.81733 4.43156 6.82147 4.41913 6.82147 4.41085C6.95814 1.44129 9.06624 1.12239 9.96912 1.12239H9.98568C9.99397 1.12239 10.0064 1.12239 10.0188 1.12239C11.1371 1.14724 13.0381 1.60282 13.1665 4.41085C13.1665 4.42328 13.1665 4.4357 13.1706 4.44398C13.1748 4.47298 13.4647 7.28929 12.1476 8.772C11.6258 9.36012 10.93 9.65003 10.0147 9.65831C10.0064 9.65831 10.0023 9.65831 9.99397 9.65831C9.98568 9.65831 9.98154 9.65831 9.97326 9.65831C9.0621 9.65003 8.36216 9.36012 7.84445 8.772C6.53155 7.29758 6.81318 4.46883 6.81733 4.44398Z"
+                  fill="#2B3063" />
+                <path
+                  d="M18.505 15.8874C18.505 15.8832 18.505 15.8791 18.505 15.8749C18.505 15.8418 18.5009 15.8087 18.5009 15.7714C18.476 14.9513 18.4222 13.0338 16.6247 12.4208C16.6123 12.4167 16.5957 12.4125 16.5833 12.4084C14.7154 11.9321 13.1623 10.8552 13.1457 10.8428C12.8931 10.6647 12.5452 10.7269 12.3671 10.9795C12.189 11.2321 12.2511 11.58 12.5038 11.7581C12.5742 11.8078 14.2225 12.9551 16.2851 13.4852C17.2501 13.829 17.3578 14.8602 17.3868 15.8045C17.3868 15.8418 17.3868 15.8749 17.3909 15.9081C17.395 16.2808 17.3702 16.8565 17.3039 17.1878C16.633 17.5689 14.003 18.8859 10.0022 18.8859C6.01794 18.8859 3.37143 17.5647 2.69634 17.1837C2.63008 16.8524 2.60109 16.2767 2.60937 15.9039C2.60937 15.8708 2.61351 15.8377 2.61351 15.8004C2.6425 14.8561 2.75019 13.8248 3.71519 13.4811C5.77773 12.9509 7.4261 11.7995 7.49651 11.754C7.74915 11.5759 7.81127 11.228 7.63318 10.9754C7.45509 10.7227 7.10719 10.6606 6.85455 10.8387C6.83799 10.8511 5.29315 11.9279 3.41699 12.4042C3.40042 12.4084 3.388 12.4125 3.37557 12.4167C1.5781 13.0338 1.52426 14.9513 1.49941 15.7672C1.49941 15.8045 1.49941 15.8377 1.49527 15.8708C1.49527 15.8749 1.49527 15.8791 1.49527 15.8832C1.49113 16.0986 1.48698 17.2044 1.70649 17.7594C1.74791 17.8671 1.82246 17.9582 1.92186 18.0203C2.04611 18.1031 5.02395 20 10.0063 20C14.9887 20 17.9666 18.099 18.0908 18.0203C18.1861 17.9582 18.2648 17.8671 18.3062 17.7594C18.5133 17.2085 18.5091 16.1027 18.505 15.8874Z"
+                  fill="#2B3063" />
+              </svg>
+              Личный кабинет
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link link" href="index.html">
+              Главная
+            </a>
+          </li>
+
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">
+              Настройки
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <section class="setings-global">
+        <div class="container">
+          <h1 class="setings-global__title title">
+            Настройки
+          </h1>
+          <div class="setings-global__inner">
+            <div class="setings-global__item">
+              <p class="setings-global__subtitle">
+                Windows XP:
+              </p>
+              <div class="spoiler-wrap disabled">
+                <div class="spoiler-head">
+                  Настройка "Сетевого подключения":
+                </div>
+
+                <ul class="spoiler-body">
+                  <li class="spoiler-item">
+                    1. Откройте <span>"Пуск - Настройка - Панель управления".</span>
+                    <img src="../images/setings/win-xp/network-01.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    2. Выберите <span>"Сеть и подключения к Интернету".</span>
+                    <img src="../images/setings/win-xp/network-02.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    3. Выберите <span> "Сетевые подключения".</span>
+                    <img src="../images/setings/win-xp/network-03.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    4. Откроется окно, содержащее Сетевые подключения. Если у вас несколько Сетевых подключений, то
+                    выберете то к которому
+                    подключен сетевой кабель ISP <span>"-HOST-"</span>. Нажмите по нему правой кнопкой мыши и в
+                    открывшемся контекстном меню выберите
+                    <span>"Свойства"</span>.
+                    <img src="../images/setings/win-xp/network-04.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    <p>
+                      5. В открывшемся окне Свойств найдите и поставьте галочки :
+                      <span>"При подключении вывести значок в области уведомлений"</span>и <span>"Уведомлять при
+                        ограниченном или отсутствующем подключении"</span>.
+                    </p>
+                    <p>
+                      В графе <span>"Компоненты, используемые этим подключением"</span> найдите <span>"Протокол
+                        Интернета (TCP/IP)"</span> выделите его и нажмите кнопку
+                      <span>"Свойства".</span>
+                    </p>
+                    <img src="../images/setings/win-xp/network-05.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    <p>
+                      6. Переставте маркер на <span>"Использовать следующий IP-адрес"</span>.
+                    </p>
+                    <p>
+                      Укажите: <br>
+                      свой <span>IP-адресс</span> (указан в договоре), Маска подсети <span>255.0.0.0</span> , Основной
+                      шлюз <span>10.1.1.1</span> и Предпочитаемый DNS-сервер <span>10.1.1.1</span>
+                      Нажмите кнопку <span>"ОК"</span> и кнопку <span>"Закрыть"</span> .
+                    </p>
+                    <img src="../images/setings/win-xp/network-06.png" alt="скриншот">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="spoiler-wrap disabled">
+                <div class="spoiler-head">
+                  Настройка "VPN(PPPoE) подключения":
+                </div>
+                <ul class="spoiler-body">
+                  <li class="spoiler-item">
+                    1. Откройте <span>"Пуск - Настройка - Панель управления".</span>
+                    <img src="../images/setings/win-xp/network-01.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    2. Выберите <span>"Сеть и подключения к Интернету".</span>
+                    <img src="../images/setings/win-xp/network-02.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    3. Выберите <span> "Сетевые подключения".</span>
+                    <img src="../images/setings/win-xp/network-03.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    4. Выберите <span>"Создание нового подключения"</span>.
+                    <img src="../images/setings/win-xp/vpn-04.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    5. Откроется <span>"Мастер новых подключений"</span>. Нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-05.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    6. Поставьте маркер на пункте <span>"Подключить к Интернету"</span>. Нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-06.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    7. Поставьте маркер на пункте <span>"Установить подключение вручную"</span>. Нажмите
+                    <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-07.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    8. Поставьте маркер на пункте <span>"Через высокоскоростное подключение, запрашивающее имя
+                      пользователя и пароль"</span>. Нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-08.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    9. В поле <span>"Имя поставщика услуг"</span> впишите -HOST- и нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-09.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    10. Введите свои <span>"Имя пользователя"</span> и <span>"Пароль"</span> (из договора). Нажмите
+                    <span>"Далее"</span>.
+                    <img src="../images/setings/win-xp/vpn-10.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    11. Поставьте галочку <span>"Добавить ярлык подключения на рабочий стол"</span>. Нажмите
+                    <span>"Готово"</span>.
+                    <img src="../images/setings/win-xp/vpn-11.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    12.В открывшемся окне нажмите <span>"Свойства"</span>.
+                    <img src="../images/setings/win-xp/vpn-12.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    13. На вкладке <span>"Параметры"</span> снимите галочку <span>"Запрашивать имя, пароль, сетификат и
+                      т.д."</span> Нажмите <span>"ОК"</span>.
+                    <img src="../images/setings/win-xp/vpn-13.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    14. Появится окно отображающее ход подключения.
+                    <img src="../images/setings/win-xp/vpn-14.png" alt="скриншот">
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="setings-global__item">
+              <p class="setings-global__subtitle">
+                Windows 7:
+              </p>
+              <div class="spoiler-wrap disabled">
+                <div class="spoiler-head">
+                  Настройка "Сетевого подключения":
+                </div>
+                <ul class="spoiler-body">
+                  <li class="spoiler-item">
+                    1. Откройте <span>"Пуск - Панель управления"</span>.
+                    <img src="../images/setings/win-7/network-01.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    2. Выберите <span>"Сеть и Интернет"</span>.
+                    <img src="../images/setings/win-7/network-02.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    3. Выберите <span>"Центр управления сетями и общим доступом"</span>.
+                    <img src="../images/setings/win-7/network-03.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    4. Слева вверху выберите <span>"Изменение параметров адаптера"</span>.
+                    <img src="../images/setings/win-7/network-04.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    5. Откроется окно, содержащее Сетевые адаптеры. Если у вас несколько Сетевых адаптеров, то выберете
+                    тот к которому
+                    подключен сетевой кабель ISP <span>"-HOST-"</span>. Нажмите по нему правой кнопкой мыши и в
+                    открывшемся контекстном меню выберите
+                    <span>"Свойства"</span>.
+                    <img src="../images/setings/win-7/network-05.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    6. В открывшемся окне Свойств в графе <span>"Отмеченные компоненты используются этим
+                      подключением:"</span> найдите <span>"Протокол Интернета версии 4 (TCP/IPv4)"</span> выделите его и
+                    нажмите кнопку <span>"Свойства"</span>.
+                    <img src="../images/setings/win-7/network-06.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    7. Переставте маркер на <span>"Использовать следующий IP-адрес"</span>.
+                    Укажите: <br>
+                    свой <span>IP-адресс</span> (указан в договоре), Маска подсети <span>255.0.0.0</span>, Основной шлюз
+                    <span>10.1.1.1</span> и Предпочитаемый DNS-сервер <span>10.1.1.1</span>
+                    Нажмите кнопку <span>"ОК"</span> и кнопку <span>"Закрыть"</span>.
+                    <img src="../images/setings/win-7/network-07.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    8. Если компьютер запросит настройку сетевого размещения, то поставте галочку <span>"Больше не
+                      задавать этот вопрос. В будущем считать все сети, к которым я подключаюсь, общественными."</span>
+                    и выберите <span>"Общественная сеть"</span>.
+                    <img src="../images/setings/win-7/network-08.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    9. Нажмите <span>"Закрыть"</span>.
+                    <img src="../images/setings/win-7/network-09.png" alt="скриншот">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="spoiler-wrap disabled">
+                <div class="spoiler-head">
+                  Настройка "VPN(PPPoE) подключения":
+                </div>
+                <ul class="spoiler-body">
+                  <li class="spoiler-item">
+                    1. Откройте <span>"Пуск - Панель управления"</span>.
+                    <img src="../images/setings/win-7/vpn-01.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    2. Выберите <span>"Сеть и Интернет"</span>.
+                    <img src="../images/setings/win-7/vpn-02.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    3. Выберите <span>"Центр управления сетями и общим доступом"</span>.
+                    <img src="../images/setings/win-7/vpn-03.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    4. Выберите <span>"Настройка нового подключения или сети"</span>.
+                    <img src="../images/setings/win-7/vpn-04.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    5. В открывшемся окне выберите <span>"Подключение к Интернету"</span>. Нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-7/vpn-05.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    6. Выберите <span>"Нет, создать новое подключение"</span>. Нажмите <span>"Далее"</span>.
+                    <img src="../images/setings/win-7/vpn-06.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    7. Выберите <span>"Высокоскоростное (с PPPoE)"</span>.
+                    <img src="../images/setings/win-7/vpn-07.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    <p>8. Введите свои <span>"Имя пользователя"</span> и <span>"Пароль"</span> (из договора).</p>
+                    <p>Поставте галочки <span>"Отображать вводимые знаки"</span> и <span>"Запомнить этот пароль"</span>.</p>
+                    <p>В поле <span>"Имя подключения"</span> впишите <span>-HOST-</span> и нажмите <span>"Подключить"</span>.</p>
+                    <img src="../images/setings/win-7/vpn-08.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    9. Дождитесь окончания подключения.
+                    <img src="../images/setings/win-7/vpn-09.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    10. Нажмите <span>"Закрыть"</span>.
+                    <img src="../images/setings/win-7/vpn-10.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    11. Слева вверху выберите <span>"Изменение параметров адаптера"</span>.
+                    <img src="../images/setings/win-7/vpn-11.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    12. Кликните правой клавишей мыши по только что созданному подключению <span>"-HOST-"</span> и выберите <span>"Свойства"</span>.
+                    <img src="../images/setings/win-7/vpn-12.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    13. В открывшемся окне на вкладке <span>"Параметры"</span> снимите галочку <span>"Запрашивать имя, пароль, сертификат и т.д."</span>. Нажмите
+                    <span>"ОК"</span>.
+                    <img src="../images/setings/win-7/vpn-13.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    14. В появившемся окне нажмите <span>"ОК"</span>.
+                    <img src="../images/setings/win-7/vpn-14.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    15. Для удобства подключения к Интернету, создайте ярлык.
+                    <img src="../images/setings/win-7/vpn-15.png" alt="скриншот">
+                  </li>
+
+                  <li class="spoiler-item">
+                    16. Нажмите <span>"Да"</span>.
+                    <img src="../images/setings/win-7/vpn-16.png" alt="скриншот">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contacts__content">
+              <h2 class="contacts__title title">
+                контакты
+              </h2>
+
+              <div class="contacts__item">
+                <p class="contacts__subtitle">
+                  Адрес нашего офиса
+                </p>
+                <address class="contacts__address">
+                  г. Юнокоммунаровск <br>
+                  ул. Ильича 40а
+                </address>
+              </div>
+
+              <div class="contacts__item contacts__item--clock">
+                <p class="contacts__subtitle">
+                  График работы
+                </p>
+                <div class="contacts__clock">
+                  Понедальник-Суббота
+                  <p class="contacts__time">
+                    8:00 - 17:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="contacts__item contacts__item--email">
+                <p class="contacts__subtitle">
+                  Email - адрес
+                </p>
+                <a class="contacts__email link" href="mailto:admin@host-lan.net.ua">
+                  admin@host-lan.net.ua
+                </a>
+              </div>
+
+              <div class="contacts__item contacts__item--tel">
+                <div class="contacts__column">
+                  <div class="contacts__box">
+                    <p class="contacts__subtitle contacts__subtitle--small">
+                      Абонентский отдел
+                    </p>
+                    <ul class="contacts__list">
+                      <li class="contacts__tel">
+                        <a href="tel:+380953371240" class="contacts__tel-link link">
+                          095-337-12-40
+                        </a>
+                      </li>
+
+                      <li class="contacts__tel">
+                        <a href="tel:+380713346754" class="contacts__tel-link link">
+                          071-334-67-54
+                        </a>
+                      </li>
+
+                      <li class="contacts__tel">
+                        <a href="tel:+380625242376" class="contacts__tel-link link">
+                          06252-4-23-76
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contacts__box">
+                    <p class="contacts__subtitle contacts__subtitle--small">
+                      Техническая поддержка
+                    </p>
+                    <ul class="contacts__list">
+                      <li class="contacts__tel">
+                        <a href="tel:+380953371256" class="contacts__tel-link link">
+                          095-337-12-56
+                        </a>
+                      </li>
+
+                      <li class="contacts__tel">
+                        <a href="tel:+380713346755" class="contacts__tel-link link">
+                          071-334-67-55
+                        </a>
+                      </li>
+
+                      <li class="contacts__tel">
+                        <a href="tel:+380625242464" class="contacts__tel-link link">
+                          06252-4-24-64
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="contacts__form form">
+              <div class="form__inner">
+                <p class="form__title">
+                  Оставить заявку на подключение
+                </p>
+            
+                <label class="form__label">
+                  <span class="sr-only">Имя</span>
+                  <input class="form__input" id="form-name" type="name" placeholder="Имя" required>
+                </label>
+            
+                <label class="form__label">
+                  <span class="sr-only">Телефон</span>
+                  <input class="form__input" id="form-phone" type="tel" placeholder="Телефон" required>
+                  <div id="form-error"></div>
+                </label>
+            
+                <label class="form__label">
+                  <span class="sr-only">Город</span>
+                  <input class="form__input" type="form-str" placeholder="Город">
+                </label>
+            
+                <div class="form__box">
+                  <label class="form__label form__label--streed">
+                    <span class="sr-only">Улица</span>
+                    <input class="form__input" type="form-ave" placeholder="Улица">
+                  </label>
+            
+                  <label class="form__label form__label--home">
+                    <span class="sr-only">Дом</span>
+                    <input class="form__input" id="form-apport" type="aport" placeholder="Дом">
+                  </label>
+                </div>
+            
+                <button class="form__btn form__btn--about button" type="submit">
+                  Подключиться
+                </button>
+            
+                <p class="form__info">
+                  Менеджер перезвонит вам в течении 30 минут
+                </p>
+              </div>
+            
+              <div class="form__inner2" style="display: none;">
+                <p class="form__thanks">
+                  Спасибо за обращение
+                </p>
+                <p class="form__info form__info--size">
+                  Менеджер перезвонит вам в течении 30 минут
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__box">
+            <a href="#body" class="footer__logo logo">
+              <img src="images/footer-logo.png" alt="логотип" />
+            </a>
+          </div>
+
+          <div class="footer__box">
+            <ul class="footer__links">
+              <li class="footer__item">
+                <a href="index.html" class="footer__link link">
+                  главная
+                </a>
+              </li>
+
+              <li class="footer__item">
+                <a href="http://stat.host-lan.net.ua/" target="_blank" class="footer__link link">
+                  личный кабинет
+                </a>
+              </li>
+
+              <li class="footer__item">
+                <a href="setings.html" class="footer__link link">
+                  настройки IPTV
+                </a>
+              </li>
+
+              <li class="footer__item">
+                <a href="free-info.html" class="footer__link link">
+                  FREE Wi-Fi
+                </a>
+              </li>
+
+              <li class="footer__item">
+                <a href="sale.html" class="footer__link link">
+                  акции
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__copy">
+          Copyright 2009-2021 ISP -HOST-
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
